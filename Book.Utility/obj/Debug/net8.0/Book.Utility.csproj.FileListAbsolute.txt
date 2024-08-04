@@ -1,0 +1,11 @@
+D:\VS-Projects\MVC\BookStore\Book.Utility\bin\Debug\net8.0\Book.Utility.deps.json
+D:\VS-Projects\MVC\BookStore\Book.Utility\bin\Debug\net8.0\Book.Utility.dll
+D:\VS-Projects\MVC\BookStore\Book.Utility\bin\Debug\net8.0\Book.Utility.pdb
+D:\VS-Projects\MVC\BookStore\Book.Utility\obj\Debug\net8.0\Book.Utility.GeneratedMSBuildEditorConfig.editorconfig
+D:\VS-Projects\MVC\BookStore\Book.Utility\obj\Debug\net8.0\Book.Utility.AssemblyInfoInputs.cache
+D:\VS-Projects\MVC\BookStore\Book.Utility\obj\Debug\net8.0\Book.Utility.AssemblyInfo.cs
+D:\VS-Projects\MVC\BookStore\Book.Utility\obj\Debug\net8.0\Book.Utility.csproj.CoreCompileInputs.cache
+D:\VS-Projects\MVC\BookStore\Book.Utility\obj\Debug\net8.0\Book.Utility.dll
+D:\VS-Projects\MVC\BookStore\Book.Utility\obj\Debug\net8.0\refint\Book.Utility.dll
+D:\VS-Projects\MVC\BookStore\Book.Utility\obj\Debug\net8.0\Book.Utility.pdb
+D:\VS-Projects\MVC\BookStore\Book.Utility\obj\Debug\net8.0\ref\Book.Utility.dll

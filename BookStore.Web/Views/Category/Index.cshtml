@@ -1,0 +1,64 @@
+﻿@model List<Book.Models.Models.Category>;
+@{
+    ViewData["Title"] = "Categories";
+}
+@*if (TempData["success"] != null)
+{
+    <h2>@TempData["success"]</h2>
+}*@
+@*OR BY USING _Notifications(MANUALLY CREATED) PARTIAL VIEW*@
+<partial name="_Notifications" />
+<partial name="_Toastr" />
+@*we also can place this partial view in _Layout.cshtml just before RenderBody();*@
+
+<div class="container">
+    <div class="row pt-4 pb-3">
+        <div class="col-6">
+            <h2 class="text-primary">
+                Category List
+            </h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-controller="Category" asp-action="Create" class="btn btn-primary">
+                <i class="bi bi-plus-circle-fill"></i> Create New Category
+            </a>
+        </div>
+    </div>
+
+<table class="table table-bordered table-striped">
+    <thead class="bg-danger">
+    <tr>
+        <th>
+            Category Name
+        </th>
+        <th>
+            Display Order
+        </th>
+        
+    </tr>
+    </thead>
+    <tbody>
+        @foreach (var obj in Model.OrderBy(u => u.DisplayOrder))
+        {
+            <tr>
+                <td>
+                    @obj.Name
+                </td>
+                <td>
+                    @obj.DisplayOrder
+                </td>
+                <td>
+                <div class="w-75 btn-group" role="group">
+                    <a class="btn btn-outline-primary btn-sm" asp-controller="Category" asp-action="Edit" asp-route-id="@obj.Id">
+                            <i class="bi bi-pencil-square"></i> EDIT
+                    </a>
+                    <a class="btn btn-outline-danger btn-sm" asp-controller="Category" asp-action="Delete" asp-route-id="@obj.Id">
+                            <i class="bi bi-trash-fill"></i> DELETE
+                    </a>
+                </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+</div>
